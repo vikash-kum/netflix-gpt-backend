@@ -1,0 +1,27 @@
+server:
+  port: 8000
+spring:
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/netflix_gpt
+    username: root
+    password: 1nn0vent3s
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: netflix-gpt
+
+
+application:
+  security:
+    jwt:
+      secret-key: crjj+PdxGG1ltsIU9iiYQpcP115qXPBxUDmv5bi3il8=
+      expiration: 86400000 # a day
+      refresh-token:
+        expiration: 604800000 # 7 days
