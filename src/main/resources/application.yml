@@ -1,9 +1,5 @@
 server:
-  port: 443
-  ssl:
-    key-store: /home/ubuntu/ssh_certificate/keystore.jks
-    key-store-password: Coding@9097
-    key-password: Coding@9097
+  port: 8000
 
 spring:
   servlet:
@@ -11,9 +7,9 @@ spring:
       max-file-size: 500MB
       max-request-size: 500MB
   datasource:
-    url: jdbc:mysql://localhost:3306/netflix_gpt
+    url: jdbc:mysql://database.ctu42swm61ft.ap-southeast-1.rds.amazonaws.com:3306/netflix_gpt
     username: root
-    password: 1nn0vent3s
+    password: Mypassword9097
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
