@@ -1,5 +1,10 @@
 server:
-  port: 8000
+  port: 443
+  ssl:
+    key-store: /home/ubuntu/ssh_certificate/keystore.jks
+    key-store-password: Coding@9097
+    key-password: Coding@9097
+
 spring:
   servlet:
     multipart:
