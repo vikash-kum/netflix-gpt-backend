@@ -3,14 +3,12 @@ package com.netflixgpt.controller;
 import com.netflixgpt.services.ImdbService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("imdb")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class IMDBApiController {
 
     private final ImdbService imdbService;
