@@ -4,7 +4,6 @@ import com.netflixgpt.exception.CommonException;
 import com.netflixgpt.request.AuthenticationRequest;
 import com.netflixgpt.request.RegisterRequest;
 import com.netflixgpt.response.AuthenticationResponse;
-import com.netflixgpt.services.AuthenticationService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

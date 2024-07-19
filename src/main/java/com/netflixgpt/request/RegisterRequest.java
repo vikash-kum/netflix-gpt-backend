@@ -1,6 +1,5 @@
 package com.netflixgpt.request;
 
-import com.netflixgpt.utility.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,32 +1,6 @@
 server:
   port: 8000
 
-spring:
-  servlet:
-    multipart:
-      max-file-size: 500MB
-      max-request-size: 500MB
-  datasource:
-    url: jdbc:mysql://database.ctu42swm61ft.ap-southeast-1.rds.amazonaws.com:3306/netflix_gpt
-    username: root
-    password: Mypassword9097
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  application:
-    name: netflix-gpt
-
-
-application:
-  security:
-    jwt:
-      secret-key: crjj+PdxGG1ltsIU9iiYQpcP115qXPBxUDmv5bi3il8=
-      expiration: 86400000 # a day
-      refresh-token:
-        expiration: 604800000 # 7 days
-
 api:
   token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNzkwN2ZkZDczOWM4OGVlYTVkOTMyM2U4MDJlYzIzNSIsInN1YiI6IjY1NjZkOGUyMTU2Y2M3MDE0ZTY2NjQzOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xqSzX87E-qH58F9bjogjfq-CNh4GBd23z8Vqv3ZCSFw
   api: https://api.themoviedb.org/3/movie/now_playing?page=1

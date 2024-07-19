@@ -1,6 +1,5 @@
 package com.netflixgpt.model;
 
-import com.netflixgpt.utility.Role;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
